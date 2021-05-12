@@ -29,10 +29,10 @@ const User = ({ user, loading, getUser, getUserRepos, repos, match }) => {
             }
             <div className="card grid-2">
                 <div className="all-center">
-                    <img src={avatar_url} className='round-img' alt='avatar-picture' style={{ width: '9.5rem' }} />
+                    <img src={avatar_url} className='round-img' alt='avatar' style={{ width: '9.5rem' }} />
                     <h1>{name}</h1>
                     <p>{location}</p>
-                    <a href={html_url} target='_blank' className="btn btn-dark my-1">Visit GitHub Profile</a>
+                    <a href={html_url} target='_blank' rel="noreferrer" className="btn btn-dark my-1">Visit GitHub Profile</a>
                 </div>
                 <div>
                     {bio && (
