@@ -7,7 +7,7 @@ const Search = ({ showClear, clearUsers, searchUsers, setAlert }) => {
     const onSubmit = (e) => {
         e.preventDefault();
         if (text === '') {
-            this.props.setAlert('Please enter something to search', 'light')
+            setAlert('Please enter something to search', 'light')
         } else {
             searchUsers(text);
             setText('');
